@@ -9,6 +9,7 @@
 <body>
 <h1>HiHi</h1>
    <h2>${message}</h2>
+   ${result}
 </body>
 </head>
 </html>
