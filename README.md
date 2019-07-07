@@ -1,8 +1,9 @@
 # toyMap
-지도 어플리케이션 
-[서울시 공공 API(전월세가)](https://data.seoul.go.kr/dataList/datasetView.do?infId=OA-15549&srvType=S&serviceKind=1&currentPageNo=1) 호출
 
-### 사용 기술
+Map Application using java, jsp, spring framework
+we call public api - [Seoul Public API(house rent fee)](https://data.seoul.go.kr/dataList/datasetView.do?infId=OA-15549&srvType=S&serviceKind=1&currentPageNo=1)
+
+### Technology
 Component         | Technology
 ---               | ---
 Frontend          | jsp
