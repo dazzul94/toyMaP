@@ -9,7 +9,7 @@
 <body>
 <h1>HiHi</h1>
    <h2>${message}</h2>
-   ${result}
+   <pre>${result}</pre>
 </body>
 </head>
 </html>
