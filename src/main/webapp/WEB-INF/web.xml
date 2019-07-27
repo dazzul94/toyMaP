@@ -13,10 +13,13 @@
       </servlet-class>
       <load-on-startup>1</load-on-startup>
    </servlet>
-
+   
    <servlet-mapping>
       <servlet-name>toyMaP</servlet-name>
-      <url-pattern>/</url-pattern>
+      <!-- <url-pattern>/</url-pattern> -->
+      <!-- 각종 css파일 못불러와서 임시로 app으로 set --> 
+      <!-- 이유 참고: https://leegaworld.tistory.com/360 ==== 추후 수정해야할 듯함  -->
+      <url-pattern>/app/*</url-pattern>
    </servlet-mapping>
  
  

@@ -19,68 +19,9 @@
 <html>
  
 <head>
-  <style>
-    .container{
-       
-    }
-     
-    *{
-      box-sizing: border-box;
-    }
-    .container{
-      border:5px solid black;
-    }
-    .container>*{
-      border:5px solid red;
-    }
-    .container>.content>*{
-      border:5px solid green;
-    }
-    .container .content{
-      padding-left:200px;
-      /*padding-right:150px;*/
-      overflow: hidden;
-    }
-    .container .content>*{
-      float:left;
-      padding-bottom:2500px;
-      margin-bottom:-2500px;
-    }
-    .container .content main{
-      width:100%;
-    }
-    .container .content nav{
-      width:200px;
-      margin-left: -100%;
-      left:-200px;
-      position: relative;
-    }
-    .container footer{
-      clear: both;
-    }
-     
-    @media (max-width:599px){
-      .container .content{
-        padding-left:0;
-        padding-right:0;
-        overflow: visible;
-      }
-      .container .content>*{
-        float:none;
-        padding-bottom:0;
-        margin-bottom:0;
-      }
-      .container .content main{
-        width:100%;
-      }
-      .container .content nav{
-        width:auto;
-        margin-left: 0;
-        left:0;
-        position: relative;
-      }
-    }
-  </style>
+  <meta charset='UTF-8'>
+  <link rel='stylesheet' href='../css/common.css'>
+  <link rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css'>
 </head>
  
 <body>
@@ -88,12 +29,25 @@
   <jsp:include page="../header.jsp"/>
     <section class="content">
       <main>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facere itaque nisi ipsum voluptate alias, ea vitae nemo, voluptas facilis sunt tenetur harum quos cumque unde aut obcaecati atque modi nobis. Maxime molestias, veritatis alias sapiente quo fugiat provident. Provident totam asperiores laboriosam dignissimos, cupiditate, voluptatum dolore nam repellat architecto minus consequuntur. Officiis magni reprehenderi!
+        <div id="map" style="width:100%;height:350px;"></div>
       </main>
   <jsp:include page="../nav.jsp"/>
     </section>
   <jsp:include page="../footer.jsp"/>
   </div>
+  
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16ef3e47337d70c66bfabe07d24311a7&libraries=services"></script>
+  <script>
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+  mapOption = { 
+    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+    level: 3 // 지도의 확대 레벨
+  };
+	
+  // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+  var map = new kakao.maps.Map(mapContainer, mapOption); 
+  </script>
+  
 </body>
  
 </html>

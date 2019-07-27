@@ -1,0 +1,14 @@
+{
+  "name": "toymap",
+  "version": "1.0.0",
+  "description": "공공 api를 활용한 지도 애플리케이션",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bom2zzang & dazzul",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
