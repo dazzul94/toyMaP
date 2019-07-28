@@ -1,31 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='UTF-8'>
+<%--
 <title>HELLO</title>
 <body>
 <h1>HiHi</h1>
    <h2>${message}</h2>
    <pre>${result}</pre>
 </body>
-</head>
-</html>
- -->
+ --%>
 <!DOCTYPE html>
 <html>
  
 <head>
   <meta charset='UTF-8'>
+  <!-- 
+  <script src='../node_modules/jquery/dist/jquery.slim.min.js'></script>
+   -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='../node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+  
   <link rel='stylesheet' href='../css/common.css'>
   <link rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css'>
 </head>
  
 <body>
-  <div class="container">
+	<!--부트스트랩 class명과 겹쳐 containerA로 수정함-->
+  <div class="containerA">
   <jsp:include page="../header.jsp"/>
     <section class="content">
       <main>
@@ -48,6 +49,7 @@
   var map = new kakao.maps.Map(mapContainer, mapOption); 
   </script>
   
+  <jsp:include page="../searchModal.jsp"/>
 </body>
  
 </html>
