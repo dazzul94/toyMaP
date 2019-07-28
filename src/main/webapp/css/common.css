@@ -18,7 +18,7 @@
       border:5px solid green;
     }
     .containerA .content{
-      padding-left:200px;
+      /*padding-left:200px;*/ /*sideNav는 그냥 지도를 덮어버리는걸로..*/
       /*padding-right:150px;*/
       overflow: hidden;
     }
@@ -33,7 +33,7 @@
     .containerA .content nav{
       width:200px;
       margin-left: -100%;
-      left:-200px;
+      /*left:-200px;*/
       position: relative;
     }
     .containerA footer{

@@ -50,8 +50,8 @@
         </div>
         <div class='form-group'>
 	        <div class="input-group">
-			  <input type="text" id="bo" class="form-control" placeholder="보증금">
-			  <input type="text" id="mo" class="form-control" placeholder="월세">
+			  <input type="number" id="bo" class="form-control" placeholder="보증금">
+			  <input type="number" id="mo" class="form-control" placeholder="월세">
 			</div>
         </div>
       </div>
