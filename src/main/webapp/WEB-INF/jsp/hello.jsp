@@ -17,7 +17,8 @@
   <!-- 
   <script src='../node_modules/jquery/dist/jquery.slim.min.js'></script>
    -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+  <script src='../node_modules/jquery/dist/jquery.min.js'></script>
   <script src='../node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
   
   <link rel='stylesheet' href='../css/common.css'>
@@ -27,14 +28,14 @@
 <body>
 	<!--부트스트랩 class명과 겹쳐 containerA로 수정함-->
   <div class="containerA">
-  <jsp:include page="../header.jsp"/>
+  <jsp:include page="header.jsp"/>
     <section class="content">
       <main>
-        <div id="map" style="width:100%;height:350px;"></div>
+        <div id="map" style="width:100%;height:600px;"></div>
       </main>
-  <jsp:include page="../nav.jsp"/>
+  <jsp:include page="nav.jsp"/>
     </section>
-  <jsp:include page="../footer.jsp"/>
+  <jsp:include page="footer.jsp"/>
   </div>
   
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16ef3e47337d70c66bfabe07d24311a7&libraries=services"></script>
@@ -49,7 +50,7 @@
   var map = new kakao.maps.Map(mapContainer, mapOption); 
   </script>
   
-  <jsp:include page="../searchModal.jsp"/>
+  <jsp:include page="searchModal.jsp"/>
 </body>
  
 </html>
