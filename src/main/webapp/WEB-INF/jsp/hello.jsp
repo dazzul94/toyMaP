@@ -27,7 +27,7 @@
     <jsp:include page="header.jsp"/>
       <section class="content">
         <main>
-          <div id="map" style="width:100%;height:600px;"></div>
+          <div id="map" style="width:100%;height:550px;"></div>
         </main>
         <jsp:include page="nav.jsp"/>
       </section>
