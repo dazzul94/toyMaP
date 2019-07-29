@@ -5,6 +5,7 @@
 		<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#searchModal">
 			검색?여기?
 		</button>   
+	</header>
 <style>
 header {
 	height:30px;
